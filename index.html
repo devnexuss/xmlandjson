@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Employing External Data in HTML</title>
+	<link rel="stylesheet" href="themes/myTheme.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="style.css"/>
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="parent">
+        <!-- XML page -->
+        <div class="pg" data-role="page" id="xml">
+            <header data-role="header">
+                <h1>Employing External Data in HTML</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#xml" data-theme="a">XML</a></li>
+                        <li><a href="#json" data-theme="a">JSON</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section class="ui-content" role="main">
+                <h2>This page displays content from XML</h2>
+                <div id="minsi"></div>
+                    <section class="ui-grid-a">
+                        <div class="ui-block-b">
+                            <img src="images/minsi.jpeg" alt="Go Minsi">
+                        </div>
+                        <div class="ui-block-b">
+                            <img src="images/minsi2.jpeg" alt="Go Minsi">
+                        </div>
+                    </section> 
+            </section>
+            <footer data-role="footer"><h4>&copy; 2023</h4></footer>
+        </div>
+
+        <!-- JSON page -->
+        <div class="pg" data-role="page" id="json">
+            <header data-role="header">
+                <h1>Employing External Data in HTML</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#xml" data-theme="a">XML</a></li>
+                        <li><a href="#json" data-theme="a">JSON</a></li>
+                    </ul>
+                </div>
+            </header>
+            <section class="ui-content" role="main">
+                <h2>This page displays content from JSON</h2>
+                <div id="minsi2"></div>
+                    <section class="ui-grid-a">
+                        <div class="ui-block-b">
+                            <img src="images/minsi.jpeg" alt="Go Minsi">
+                        </div>
+                        <div class="ui-block-b">
+                            <img src="images/minsi2.jpeg" alt="Go Minsi">
+                        </div>
+                    </section> 
+            </section>
+            <footer data-role="footer"><h4>&copy; 2023</h4></footer>
+        </div>
+	</div>
+</body>
+</html>
+
